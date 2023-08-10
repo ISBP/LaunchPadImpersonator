@@ -1,0 +1,19 @@
+                  <script type="text/javascript">
+                  document.getElementById("signin").onclick = function () {
+                    saveLogin();
+                  };
+ 
+                  // Get the input field
+                  var input = document.getElementById("login_form_action");
+ 
+                  // Execute a function when the user presses a key on the keyboard  
+                  input.addEventListener("keypress", function(event) {
+                    // If the user presses the "Enter" key on the keyboard
+                    if (event.key === "Enter") {
+                      // Cancel the default action, if needed
+                      event.preventDefault();
+                      // Trigger the button element with a click
+                      document.getElementById("signin").click();
+                    }
+                  });
+                </script>
